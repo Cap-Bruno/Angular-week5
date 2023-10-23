@@ -1,0 +1,364 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: "Oxygen", sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+svg {
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.navbar{
+  justify-content: center;
+}
+
+#body {
+  background-color: #61122f;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+#header-nav {
+  background-color: #f6b319;
+}
+
+.navbar-header {
+  display: flex;
+}
+
+#logo-img {
+  background: url("../assets/restaurant-logo.png");
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+.navColapsed {
+  display: flex;
+}
+.navbar-brand {
+  padding-top: 20px;
+}
+
+.navbar-brand h2 {
+  font-family: "Lora", serif;
+  color: #557c3e;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin: 0;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+}
+
+.navbar-brand p {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+.navbar-brand p span {
+  vertical-align: middle;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.navbar-toggle {
+  border: none;
+  background-color: #f6b319;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #951c49;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+#nav-list li {
+  margin-right: 10px;
+}
+
+#nav-list li:hover {
+  background-color: #e7e7e7;
+}
+
+#phone span {
+  font-size: 1.6em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+
+#phone a {
+  text-align: right;
+  padding-bottom: 0;
+}
+
+#phone div {
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+#menu, #sobre, #signUp{
+  font-size: 12px;
+}
+
+.classSpan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-header button.navbar-toggle {
+  margin-top: -35px;
+}
+
+.sobre svg {
+  margin-right: 10px;
+}
+
+.menu svg {
+  margin-right: 10px;
+}
+
+/* ==== STYLE DO MANI DA PAGINA */
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+p {
+  margin-top: 5px;
+  padding: 0px 10px 10px 10px;
+}
+
+.bloco {
+  background-color: rgb(168, 167, 167);
+  border: 2px solid black;
+}
+
+.bloco h3 {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* ===== RESPONSIVIDADE */
+
+/* Dispositivos grandes */
+@media (min-width: 1200px) {
+}
+
+/* Dispositivos medios */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #logo-img {
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0px;
+  }
+  #iphone {
+    position: absolute;
+    float: right;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+/* Dispositivos pequenos */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: center;
+  }
+
+  .bloco {
+    margin-bottom: 15px;
+  }
+}
+
+/* Dispositivos muito pequenos */
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bloco {
+    margin-bottom: 15px;
+  }
+}
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours,
+#address {
+  line-height: 2;
+}
+#hours > span,
+#address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: 0.8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+a[ui-sref="admin.auth"] {
+  color: #fff;
+}
+/* END FOOTER */
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url("../assets/restaurant-logo.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p {
+    /* Kosher cert */
+    font-size: 0.6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img {
+    /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a {
+    /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span {
+    /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 {
+    /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+}
+
+.loading-indicator {
+  display: block;
+  width: 70px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 40%;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.loading-indicator img {
+  width: 70px;
+  background-color: #fff;
+}
+
+.ui-view-placeholder {
+  margin-top: 60px;
+}

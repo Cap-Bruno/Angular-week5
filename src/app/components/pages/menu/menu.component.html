@@ -1,0 +1,6 @@
+<h2 class="content" (click)="getMenu()">Menu</h2>
+<h4>Os Menus do restaurante são: </h4>
+<ul>
+    <li *ngFor="let menu of menus">({{menu.short_name}}) - {{menu.name}} <br> 
+        <p>{{menu.special_instructions}}</p></li>
+</ul>

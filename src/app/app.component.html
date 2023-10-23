@@ -1,0 +1,116 @@
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left d-md-block d-lg-block d-none">
+                        <div id="logo-img" alt="Logo image"></div>
+                    </a>
+                    <div class="navbar-brand">
+                        <a href="">
+                            <h2>Bruno's restaurant</h2>
+                        </a>
+                        <p>
+                            <img src="../assets/star-k-logo.png" alt="michelan stars" height="15px" />
+                            <span>Michelan star</span>
+                        </p>
+                    </div>
+
+                    <button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#collapsable-nav" arial-expanded="false">
+                        <span class="d-sm-block d-md-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <!-- Arrumar a classe collapse pra aparecer em tamanho normal -->
+                <div id="collapsable-nav" class="">
+                    <ul id="nav-list" class="navColapsed"><!-- nav navbar-nav navbar-right -->
+                        <li>
+                            <a href="/menu" title="menu">
+                                <span class="menu classSpan"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                        fill="currentColor" class="bi bi-journal" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                                        <path
+                                            d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+                                    </svg>Menu<br class="d-md-block" />
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/my-info">
+                                <span class="sobre classSpan">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-info-circle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path
+                                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                    </svg>My Info<br class="d-sm-block d-md-block" />
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sign-up">
+                                <span class="signUp classSpan">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-award-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
+                                        <path
+                                            d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                                    </svg>Sign Up<br class="d-sm-block" />
+                                </span>
+                            </a>
+                        </li>
+                        <li id="phone" class="d-sm-block">
+                            <a href="tel:00-0000-0000">
+                                <span>410-602-5008</span>
+                            </a>
+                            <div>*Nós entregamos</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Router outlet -->
+    <router-outlet></router-outlet>
+
+    <!-- FOOTER -->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <section id="hours" class="col-sm-4">
+                    <span>Hours:</span><br>
+                    Sun-Thurs: 11:15am - 10:00pm<br>
+                    Fri: 11:15am - 2:30pm<br>
+                    Saturday Closed
+                    <hr class="visible-xs">
+                </section>
+                <section id="address" class="col-sm-4">
+                    <span>Address:</span><br>
+                    7105 Reisterstown Road<br>
+                    Baltimore, MD 21215
+                    <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.
+                    </p>
+                    <hr class="visible-xs">
+                </section>
+                <section id="testimonials" class="col-sm-4">
+                    <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+                    <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+                </section>
+            </div>
+            <div class="text-center">
+                &copy; Copyright David Chu's China Bistro 2016 |
+                <a href="#">Admin</a>
+            </div>
+        </div>
+    </footer>
+</body>
